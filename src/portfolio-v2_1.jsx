@@ -515,7 +515,7 @@ function Navbar() {
     <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 1000, background: scrolled ? "rgba(3,4,15,0.92)" : "transparent", backdropFilter: scrolled ? "blur(24px)" : "none", borderBottom: scrolled ? "1px solid rgba(6,182,212,0.1)" : "none", transition: "all 0.4s" }}>
       <div style={{ maxWidth: 1300, margin: "0 auto", padding: "0 5vw", height: 68, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         {/* Logo */}
-        <div onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} style={{ fontFamily: "'Syne',sans-serif", fontWeight: 800, fontSize: 22, background: "linear-gradient(135deg,#06b6d4,#8b5cf6)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", cursor: "pointer", letterSpacing: 1 }}>MR V</div>
+        <div onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} style={{ fontFamily: "'Syne',sans-serif", fontWeight: 800, fontSize: 22, background: "linear-gradient(135deg,#06b6d4,#8b5cf6)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", cursor: "pointer", letterSpacing: 1 }}>MRINAL V</div>
 
         {/* Desktop links */}
         <div style={{ display: "flex", gap: 4, alignItems: "center" }} className="hide-mobile">
@@ -833,7 +833,7 @@ function About() {
           <Reveal>
             <div>
               <p style={{ fontFamily: "'Outfit',sans-serif", fontSize: 16, color: "#64748b", lineHeight: 1.9, marginBottom: 20 }}>
-                I'm <span style={{ color: "#06b6d4", fontWeight: 500 }}>Mr V</span> — an AI Engineer and Full-Stack Developer. I build systems that are intelligent, real-time, and production-ready.
+                I'm <span style={{ color: "#06b6d4", fontWeight: 500 }}>Mrinal V</span> — an AI Engineer and Full-Stack Developer. I build systems that are intelligent, real-time, and production-ready.
               </p>
               <p style={{ fontFamily: "'Outfit',sans-serif", fontSize: 16, color: "#64748b", lineHeight: 1.9, marginBottom: 20 }}>
                 My work spans the full AI stack — from training <span style={{ color: "#f59e0b" }}>computer vision models</span> (YOLOv8, CNNs) and designing <span style={{ color: "#8b5cf6" }}>RAG pipelines</span> with FAISS + LangChain, to shipping real-time collaborative apps with Yjs + Socket.io and polished <span style={{ color: "#06b6d4" }}>Flutter mobile apps</span>.
@@ -859,7 +859,7 @@ function About() {
                 <div style={{ padding: "20px 24px", fontFamily: "'JetBrains Mono',monospace", fontSize: 12, lineHeight: 2 }}>
                   {[
                     { t: "class", c: "#06b6d4" }, { t: " MrV:", c: "#f8fafc" },
-                    { t: "    name", c: "#8b5cf6" }, { t: " = ", c: "#64748b" }, { t: '"Mr V"', c: "#10b981" },
+                    { t: "    name", c: "#8b5cf6" }, { t: " = ", c: "#64748b" }, { t: '"Mrinal V"', c: "#10b981" },
                     { t: "    role", c: "#8b5cf6" }, { t: " = ", c: "#64748b" }, { t: '"AI Engineer & Full-Stack Dev"', c: "#10b981" },
                     { t: "    stack", c: "#8b5cf6" }, { t: " = [", c: "#64748b" }, { t: '"Python","Flutter","React"', c: "#10b981" }, { t: "]", c: "#64748b" },
                     { t: "    projects", c: "#8b5cf6" }, { t: " = [", c: "#64748b" }, { t: '"AccidentDetect","MedAI"', c: "#f59e0b" }, { t: "]", c: "#64748b" },
