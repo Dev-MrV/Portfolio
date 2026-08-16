@@ -6,6 +6,7 @@ import certImg5 from "./Src/Flutter_Capstone.png";
 import certImg6 from "./Src/ML_Internship.png";
 import certImg7 from "./Src/Venura_Intern.png";
 import certImg8 from "./Src/elevate.png";
+import certImg9 from "./Src/1000092995.png";
 import { useState, useEffect, useRef, useCallback } from "react";
 
 // Credly Icons
