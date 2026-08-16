@@ -1496,6 +1496,7 @@ const PDF_CERTIFICATES = [
   { title: "IBM Edunet AICTE Certificate", issuer: "AICTE", file: "/pdfs/AICTE B7 PD Certificate-632.pdf", color: "#06b6d4", icon: "🎓", img: certImg6 },
   { title: "Venura Internship Certificate", issuer: "Venura", file: "/pdfs/Internship Certificate.pdf", color: "#10b981", icon: "💼", img: certImg7 },
   { title: "Elevate Labs Internship Certificate", issuer: "Elevate Labs", file: "/pdfs/AIML 1 (1)_compressed-74.pdf", color: "#0ea5e9", icon: "🔖", img: certImg8 },
+  { title: "Foundational C# with Microsoft", issuer: "Microsoft", file: "/pdfs/c#.pdf", color: "#0ea5e9", icon: "©️", img: certImg9 },
 ];
 
 function Certifications() {
