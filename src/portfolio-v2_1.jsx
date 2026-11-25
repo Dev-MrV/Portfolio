@@ -1135,6 +1135,7 @@ const PROJECTS = [
     color: "#f59e0b",
     icon: "📅",
     github: "https://github.com/Dev-MrV/habit_tracker",
+    apk: "https://github.com/Dev-MrV/habit_tracker/releases/download/v1.0.0/habit_tracker.apk",
   },
   {
     title: "AI Road Accident Detection",
@@ -1206,11 +1207,29 @@ function ProjectCard({ proj, delay, isHovered, isNeighbor, hoveredIdx, myIdx }) 
           }}>
             {proj.icon}
           </div>
-          {proj.github && (
-            <a href={proj.github} target="_blank" rel="noreferrer" style={{ color: "#64748b", textDecoration: "none", fontSize: 20 }}>
-              🔗
-            </a>
-          )}
+          <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+            {proj.github && (
+              <a href={proj.github} target="_blank" rel="noreferrer" style={{ color: "#64748b", textDecoration: "none", fontSize: 20 }}>
+                🔗
+              </a>
+            )}
+            {proj.apk && (
+              <a
+                href={proj.apk}
+                download
+                style={{
+                  display: "flex", alignItems: "center", gap: 4, color: "#10b981",
+                  textDecoration: "none", fontSize: 11, fontFamily: "'JetBrains Mono',monospace",
+                  border: "1px solid #10b981", borderRadius: 20, padding: "3px 10px",
+                  transition: "all 0.2s", background: "rgba(16,185,129,0.08)"
+                }}
+                onMouseOver={e => { e.currentTarget.style.background = "rgba(16,185,129,0.22)"; e.currentTarget.style.boxShadow = "0 0 8px rgba(16,185,129,0.4)"; }}
+                onMouseOut={e => { e.currentTarget.style.background = "rgba(16,185,129,0.08)"; e.currentTarget.style.boxShadow = "none"; }}
+              >
+                📲 APK
+              </a>
+            )}
+          </div>
         </div>
         <h3 style={{ fontFamily: "'Syne',sans-serif", fontSize: 22, fontWeight: 700, color: "#f8fafc", marginBottom: 12 }}>{proj.title}</h3>
         <p style={{ fontFamily: "'Outfit',sans-serif", fontSize: 14, color: "#94a3b8", lineHeight: 1.6, marginBottom: 24 }}>{proj.desc}</p>
